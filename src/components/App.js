@@ -1,17 +1,13 @@
-import React from "react";
-import "../styles/App.css";
-import UserList from "./UserList";
-import Counter from "./Counter";
+import React from 'react';
+import '../styles/App.css';
+import UserList from './UserList';
+import TodoList from './TodoList';
 
-// DRY => Dont Repeat Yourself
-function App({ users }) {
-  return (
+const App = () => (
     <>
-      <Counter />
-
-      <UserList users={users} />
+        <UserList />
+        <TodoList />
     </>
-  );
-}
+);
 
 export default App;
